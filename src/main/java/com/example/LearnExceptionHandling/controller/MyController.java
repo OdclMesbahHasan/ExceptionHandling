@@ -12,6 +12,11 @@ public class MyController {
     public String throwException() {
         throw new PlainTextException("Plain text Exception");
        // throw new CustomException("Server not found");
-
     }
+
+    @GetMapping("/abc")
+    public String abc() {
+        throw new PlainTextException("Abc thrown");
+    }
+
 }
